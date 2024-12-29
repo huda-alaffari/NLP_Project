@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-webpack</title>
+</head>
+
+<body>
+    <div class="container">
+        <section></section>
+            <form id="myForm" method="post" onsubmit="return Client.handleSubmit(event)">
+                <label for="URI">Enter an Article URL:</label>
+                <input type="text" id="article-url" name="input" value="" placeholder="Enter URL" />
+                <button type="submit" value="Submit" class="btn-submit">Submit</button>
+            </form>
+        </section>    
+    </div>
+    <section>    
+        <!--<div id="error" style="display: none;"></div>-->
+        <p id="error"></p>
+    </section>    
+    <section id="results">
+        <strong>Form Results:</strong>
+        <div id="text"></div>
+        <div id="agreement"></div>
+        <div id="subjectivity"></div>
+        <div id="confidence"></div>
+        <div id="irony"></div>
+        <div id="score_tag"></div>
+       <!-- <div>
+            <h2>Results:</h2>
+            <div id="loader" style="display: none;"></div>
+
+            <ul id="resultsList">
+                <li id="agreement"></li>
+                <li id="subjectivity"></li>
+                <li id="confidence"></li>
+                <li id="irony"></li>
+                <li id="score_tag" style="font-weight: normal;"></li>
+            </ul>
+        </div>-->
+    </section>    
+</body>
+
+</html>
